@@ -13,3 +13,5 @@ out_file.close
 in_file.close
 
 # when you don't close file at a write mode trying to add new sentence to file will not work
+
+#in one line script done by using ";"to show the end of a line of code
