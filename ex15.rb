@@ -16,3 +16,5 @@ txt_again = open(file_again)#enter file_again as aparameter to  the open method
 #call the read method on the txt_again file object
 #string is returned
 print txt_again.read
+#close the txt_again file object
+txt_again.close
