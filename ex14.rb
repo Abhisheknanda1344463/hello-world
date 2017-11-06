@@ -3,7 +3,7 @@ user_firstname = ARGV.first # gets the first argumem
 user_lastname = ARGV.last
 #original prompt
 #prompt  = '>'
-prompt = "#{$0} >>" #change values of prompt
+prompt = "#{$0} >>" #change values of prompt indicate the global var name of sript is shown
 
 puts "Hi #{user_firstname} #{user_lastname}, i'm on the  #{$0} script."
 puts "I'd like to ask you a few questions."
