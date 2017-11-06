@@ -12,7 +12,7 @@ target = open(filename,'w')
 #Opening a file in w mode will either truncate the file to zero length or create a new file if the file does not exist.
 
 puts "Truncating the file. GOODBYE!"
-target.truncate(1) #truncate the file removes everything in the file
+target.truncate(0) #truncate the file removes everything in the file
 
 puts "Now I'm going to ask you for three lines."
 
@@ -26,12 +26,8 @@ line3 = $stdin.gets.chomp
 
 puts "I'm going to write these to the file"
 
-target.write(line1)#it write in the line as write  accept argument
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+target.write("line1: #{line1}\nline2: #{line2}\nline3: #{line3}\n")#it write in the line as write  accept argument
+
 
 puts "And finally,we close it"
 target.close #for the closing the file
