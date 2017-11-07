@@ -1,10 +1,11 @@
+def whole_number(inc,num)
 i = 0
 numbers = []
-while i<6
+while i<num
   puts "at the top i is #{i}"
   numbers<<i
 
-  i+=1
+  i+=inc
   puts "Number now:",numbers
   puts "At the the bottom i is #{i}"
   puts ""
@@ -14,3 +15,5 @@ puts "the numbers:"
 
 #remember you can write  this 2 other ways
 numbers.each {|num| puts num}
+end
+whole_number(2,6)
