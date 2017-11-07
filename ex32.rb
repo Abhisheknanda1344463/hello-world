@@ -13,7 +13,7 @@ end
 #this and the next one are the preferred
 #way Ruby for_loop are written
 
-fruits.each do|frui|
+fruits.each do|fruit|
   puts "A fruit of type: #{fruit}"
 end
 
@@ -24,12 +24,12 @@ change.each{|i| puts "i got #{i}"}
 
 #we can also build lists, first start with an empty one
 elements = []
-gi
 #then use the range operator to do 0 to 5 counts
 (0..5).each do |i|
   puts "Adding #{i} to the list"
   #pushes the i variable on the *end* of the list
-  elements<<i
+  elements.insert(i)
+  #elements>>i
 end
 
 #now we can peint them out too
