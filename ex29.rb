@@ -1,6 +1,6 @@
-people =  20
-cats = 30
-dogs = 15
+people =  10
+cats = 50
+dogs = 55
 
 if people < cats
   puts "TOO many cats the world is doomed"
